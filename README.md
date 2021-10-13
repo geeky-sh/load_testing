@@ -45,9 +45,21 @@ kubectl exec -it pod/load-testing-5b696fc88c-57fdl -- /bin/bash # to get in a sh
 kubectl port-forward pod/load-testing-5b696fc88c-57fdl 8000:5000 # forwarding port for a particular pod from local to pod. This is used for testing whether pod APIs are working fine
 ```
 
+## How to make life easy
+Add the below lines in `~/.zshrc` or `~/.bashrc`
+```sh
+alias d="docker"
+alias di="docker image"
+alias dc="docker container"
+alias dr="docker run"
+alias kl="kubectl"
+alias mk="minikube"
+```
+
 ## Remaining learnings:
-- Autoscale service based on traffic
+- Learn autoscale strategies and how to implement them
 - Check how can images be loaded from remote server
+
 
 ## Ref:
 - https://minikube.sigs.k8s.io/docs/handbook/accessing/ (for tunneling basically)
