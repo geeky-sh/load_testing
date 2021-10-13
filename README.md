@@ -39,6 +39,7 @@ minikube service --url <service-name> # to get the customer url + port through w
 
 kubectl delete -f service.yaml # delete resource (deployment / service)
 kubectl delete <resource> <name> # delete resource (deployment / service)
+minikube delete # delete local kubernetes cluster
 
 kubectl logs <resource>/<name> -f # view logs -f is for follow
 kubectl exec -it pod/load-testing-5b696fc88c-57fdl -- /bin/bash # to get in a shell of a particular pod
