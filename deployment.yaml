@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: load-testing
+  labels:
+    type: restapi
+spec:
+  selector:
+    matchLabels:
+      app: load-testing
+  replicas: 3
+  template:
+    metadata:
+      name: load-testing-tmpl
+      labels:
+        app: load-testing
+    spec:
+      containers:
+        - name: load-testing
+          image: load_testing:v1
+          ports:
+            - containerPort: 5000
