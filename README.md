@@ -57,12 +57,19 @@ alias kl="kubectl"
 alias mk="minikube"
 ```
 
+## Info
+- Used [locust](https://docs.locust.io/en/stable/quickstart.html#quickstart) to do load testing.
+
 ## Remaining learnings:
-- Learn autoscale strategies and how to implement them
+- Learn autoscale strategies and how to implement them.
+  - Using locust lib, replicate load and see how autoscaling strategies work
 - Check how can images be loaded from remote server
+- Connect to an external database.
+- Install vault in minikube via helm to configure environment variables. [Help](https://learn.hashicorp.com/tutorials/vault/kubernetes-minikube)
 
 
 ## Ref:
+- https://minikube.sigs.k8s.io/docs/start/ (Minikube - getting started)
 - https://minikube.sigs.k8s.io/docs/handbook/accessing/ (for tunneling basically)
 - https://thecodinginterface.com/blog/flask-rest-api-minikube/ (very helpful)
 
